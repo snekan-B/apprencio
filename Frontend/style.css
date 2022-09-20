@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(lightblue,rgb(15, 77, 98));
+}
+.title
+{
+    font-weight: 600;
+    margin: 30px 0px;
+    font-size: 50px;
+    color: rgb(123, 36, 36)
+}
+
+.input-group-text
+{
+    width: 170px; 
+    justify-content: center;
+    background-color:  rgb(104, 82, 82) !important;
+    color: white !important;
+}
+input .form-control ::placeholder 
+{
+    color: skyblue !important;
+}
+
+.col-md-6
+{
+    margin-top: 50px !important;
+    background-image: linear-gradient(rgb(218, 204, 204),rgb(190, 169, 169));
+    padding-bottom: 20px !important;
+}
+
+.btn-primary
+{
+    margin-top: 30px;
+    background-color:  rgb(104, 82, 82) !important;
+    border-color: none !important;
+}

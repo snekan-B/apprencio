@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurrah!</title>
+</head>
+<body>
+    <p class="title">Error Occured!!!!</p>
+    <a href="index.html">Go back</a>
+</body>
+<style>
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(lightblue,rgb(15, 77, 98));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+p{
+    font-size: 75px;
+    text-align: center;
+    color:rgb(123, 36, 36) ;
+}
+a{
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+   text-decoration: none;
+   cursor: pointer;
+}
+</style>
+
+<script>
+
+fetch('http://127.0.0.1:5000/')
+  .then(response => response.json())
+  .then(json => {
+    document.querySelector('.title').innerHTML=json.output;
+  })
+</script>
+</html>

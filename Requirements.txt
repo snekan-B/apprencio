@@ -1,0 +1,4 @@
+flask
+markupsafe==2.0.1
+sklearn
+Flask-Cors
